@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilos para el fondo de la página */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: lightblue; /* Blanco */
+        }
+
+        /* Estilos para el cuadro de la encuesta */
+        .encuesta {
+            max-width: 600px;
+            margin: 50px auto; /* Ajusta el margen superior para mover el cuadro hacia abajo */
+            padding: 20px;
+            background-color: white; /* Celeste */
+            border: 2px solid black; /* Bordes negros */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos para el texto dentro del cuadro */
+        .encuesta h1 {
+            text-align: center;
+        }
+        .encuesta p {
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <p>Lo invitamos a rellenar todo el formulario, toda la informacion que proporcione se utilizara únicamente conn fines de investigacion
+        con el proposito de analizar los efectos del trafico en El Salvador.
+    </p>
+
+    <div class="encuesta">
+        <h1>Encuesta</h1>
+        <label for="pregunta1">¿Tiene automovil?</label><br>
+        <input type="radio" name="pregunta1" value="si"> Sí
+        <input type="radio" name="pregunta1" value="no"> No<br><br>
+    
+        <label for="pregunta2">¿Tiene licencia?</label><br>
+        <input type="radio" name="pregunta2" value="si"> Si
+        <input type="radio" name="pregunta2" value="no"> No <br><br>
+
+        <label for="pregunta3">¿Ha sido victima de algun accidente?</label><br>
+        <input type="radio" name="pregunta3" value="si"> Si
+        <input type="radio" name="pregunta3" value="no"> No <br><br>
+
+        <label for="pregunta4">¿Ha presenciado algún accidente?</label><br>
+        <input type="radio" name="pregunta4" value="si"> Si
+        <input type="radio" name="pregunta4" value="no"> No <br><br>
+
+        <label for="pregunta5">¿Ha estado hospitalizado por algún accidente?</label><br>
+        <input type="radio" name="pregunta5" value="si"> Si
+        <input type="radio" name="pregunta5" value="no"> No <br><br>
+
+        <button style="background-color: lightblue; color: black; border: 2px solid black;">Enviar</button>
+
+    </div>
+    <p> Le agradecemos de antemano por su tiempo y colaboracion en el llenado y colaboracion de este importante formulario
+        Su participacion contribuira a mejorar la compresion y la gestion del trafico en el pais
+    </p>
+</body>
+</html>
+
+    
